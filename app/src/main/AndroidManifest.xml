@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login_page"></activity>
+        <activity android:name=".customer_serviceList"></activity>
+        <activity android:name=".admin_servicelist" />
+        <activity android:name=".updateService" />
+        <activity android:name=".admin_addService" />
+        <activity android:name=".admin_service_menu" /> <!-- <activity android:name=".login_page"></activity> -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

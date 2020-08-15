@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateService">
+
+
+
+    <TextView
+        android:id="@+id/lblLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/logout"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtimageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/link_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/home"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtimageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/link_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_update"
+        android:layout_width="157dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_service_image" />
+
+    <TextView
+        android:id="@+id/lbladdimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="154dp"
+        android:text="@string/addimage"
+        android:textColor="#040000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblupdateHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/updateHeading"
+        android:textColor="#0B0000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtupdate_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/lbladdimage" />
+
+    <Button
+        android:id="@+id/btnUpdateimage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="6dp"
+        android:background="#D1820D"
+        android:text="@string/updateimageButton"
+        android:textColor="#090000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtupdate_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/servicename"
+        android:textColor="#070000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/txtupdate_image" />
+
+    <EditText
+        android:id="@+id/tctServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/lblServiceName" />
+
+    <TextView
+        android:id="@+id/lblCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/categoryName"
+        android:textColor="#0C0000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/tctServiceName" />
+
+    <EditText
+        android:id="@+id/txtcategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/lblCategoryName" />
+
+    <TextView
+        android:id="@+id/lblServiceprovider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/serviceProvider"
+        android:textColor="#090000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/txtcategoryName" />
+
+    <TextView
+        android:id="@+id/lblpice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/price"
+        android:textColor="#0C0000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@+id/txtproviderName"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblpice" />
+
+    <EditText
+        android:id="@+id/txtproviderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@id/imageView_update"
+        app:layout_constraintTop_toBottomOf="@id/lblServiceprovider" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="15dp"
+        android:background="#D1820D"
+        android:text="UPDATE"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
